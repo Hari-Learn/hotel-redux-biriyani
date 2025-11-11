@@ -1,14 +1,14 @@
 import {createSlice} from "@reduxjs/toolkit"
 
 const initialState = {
-    orders:[]
+    orders:[],
 }
 
 const biriyaniSlice = createSlice({
     name:"biriyani",
     initialState,
     reducers:{
-        orderBiriyani : (action,state) => {
+        orderBiriyani : (state,action) => {
             state.orders.push(action.payload)
         }
     }
